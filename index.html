@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GitHub Homepage</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="mystyle.css">
+		<script>
+		var username=prompt("enter your name:");
+		if (username==null || username==""){
+			alert("hi stranger,welcome to my GitHub homepage!!");
+			}else{
+				alert("hi "+username+",welcome to my GitHub homepage!!");
+			}
+		</script>
+	</head>
+	<body>  <!--body 字體大小等 -->
+		<div>
+		<h1>HI,I'm a special bottom</h1>
+		<button type="button" onclick="change()">special bottom</button>
+		</div>
+		<div>
+			<ul class="top"> <!--nevigation bar 設定 -->
+				<li class="top"><a class="top" href="#informations">Informations</a></li>
+				<li class="top"><a class="top" href="#autobiography">My autobiography</a></li>
+				<li class="top"><a class="top" href="#singers">My favorite singers</a></li>
+				<li class="top"><a class="top" href="#animies">My favorite animies</a></li>
+				<li class="top"><a class="top" href="#cats">cats</a></li>
+			</ul>
+		</div>
+		<div>
+			<section id="informations">
+				<table> <!--Table 大小 -->
+					<tr>
+						<th colspan="2"><h2>Informations</h2></th>
+					</tr>
+					<tr>
+						<td>My name is</td>  <!--Table 欄位顏色-->
+						<td>Josh Li</td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td>I'm a boy</td>
+					</tr>
+					<tr>
+						<td>GitHub id</td>
+						<td>48124812</td>
+					</tr>
+					<tr>
+						<td>height</td>
+						<td>1.7m</td>
+					</tr>
+					<tr>
+						<td>weight</td>
+						<td>53kg</td>
+					</tr>
+					<tr>
+						<td>department</td>
+						<td><a 	href='#' onclick="open('https://im.mgt.ncu.edu.tw/', 'NCUIM_Department',config='height=500,width=500');">NCUMIS</a></td>
+					</tr>
+				</table>
+			</section>
+		</div>	
+		<div>
+			<section id="autobiography">
+				<h2>My autobiography</h2>
+				<hr>
+				<p>Hi,my name is josh</p>
+				<p> josh is a 20-year-old part time health centre receptionist who enjoys worship, drone photography and jigsaw puzzles. He is kind and optimistic, but can also be very selfish and a bit lazy.</p>
+				<p>	He is a Taiwanese Christian who defines himself as straight. He started studying medicine at college but never finished the course. He has a severe phobia of apostrophes, and is obsessed with milkshake.</p>
+				<p>	Physically, josh is in good shape. He is average-height with walnut skin, black hair and black eyes.</p>
+				<p>	He grew up in a middle class neighbourhood. He was raised by his mother, his father having left when he was young.</p>
+				<p>	He is currently single. His most recent romance was with a carpenter called Jill Gabrielle Cooper, who was 10 years older than him. They broke up because josh got fed up of being taken advantage of.</p>
+				<p>	josh's best friend is a part time health centre receptionist called Chloe Wang. They get on well most of the time. He also hangs around with Shannon Doherty and Lewis Macdonald. They enjoy watching YouTube videos together.</p>
+			</section>	
+		</div>
+		<br>
+		<div>
+			<section id="singers">
+				<h2>My favorite singers</h2>
+				<ul>
+					<li><a href="https://en.wikipedia.org/wiki/Taylor_Swift">Taylor Swift</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Britney_Spears">Britney Spears</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Adele">Adele</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Katy_Perry">Katy Perry</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Amy_Winehouse">Amy Winehouse</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/The_Weeknd">The Weeknd</a></li>
+				</ul>
+			</section>
+		</div>
+		<br>
+		<div>
+			<section  id="animies">
+				<h2>My favorite animies</h2>
+				<ul>
+					<li><a href="https://zh.m.wikipedia.org/zh-tw/HUNTER%C3%97HUNTER">Hunter x Hunter</a></li>
+					<li><a href="https://zh.m.wikipedia.org/zh-tw/ONE_PIECE">one piece</a></li>
+					<li><a href="https://zh.m.wikipedia.org/zh-tw/%E9%8F%88%E9%8B%B8%E4%BA%BA">chainsaw man</a></li>
+					<li><a href="https://zh.wikipedia.org/zh-cn/SPY%C3%97FAMILY%E9%96%93%E8%AB%9C%E5%AE%B6%E5%AE%B6%E9%85%92">SPY×FAMILY</a></li>
+					<li><a href="https://zh.m.wikipedia.org/zh-tw/%E5%92%92%E8%A1%93%E8%BF%B4%E6%88%B0">Jujutsu Kaisen</a></li>
+					<li><a href="https://zh.wikipedia.org/wiki/JoJo%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%99%A9">JoJo's Bizarre Adventure</a></li>
+				</ul>
+			</section>
+			<section id="cats">
+				<h2>Cats</h2>
+				<h1><img src="https://cdn.hk01.com/di/media/images/dw/20201106/401416999915360256306825.jpeg/iqxvInEFZy7h3XaApMuvWP89RD7qd__5_O4LVvzuC1Y?v=w1920" class="cat">"貓貓圖1"</img></h1>  <!--圖片設定 -->
+				<h1><img src="./cat.jfif" class="cat">"貓貓圖2"</img></h1>
+			</section>
+		</div>
+		<script>
+		function change(){
+			var element=document.body;
+			element.classList.toggle("dark");
+		}
+		</script>
+	</body>
+</html>
